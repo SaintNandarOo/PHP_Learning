@@ -10,6 +10,6 @@ foreach ( $meals as $dish => $price ) {
 	$meals[ $dish ] = $meals[ $dish ] * 2;
 }
 foreach ( $meals as $dish => $price ) {
-	printf("The new price of %s is \$%.2f.<br>",$dish,$price);
+	printf( "The new price of %s is \$%.2f.<br>",$dish,$price );
 }
 ?>

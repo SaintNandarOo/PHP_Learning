@@ -9,7 +9,7 @@ print "Before Sorting:<br>";
 foreach ( $meal as $key => $value ) {
 	print" \$meal:$key$value<br>"; 
 }
-arsort($meal);
+arsort( $meal );
 print "<br>After Sorting:<br>";
 foreach ( $meal as $key => $value ) {
 	print" \$meal:$key$value<br>"; 

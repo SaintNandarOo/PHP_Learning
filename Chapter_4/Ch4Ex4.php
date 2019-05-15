@@ -1,7 +1,7 @@
 <?php
 $students = [ 
-	'James D. McCawley' => ['grade' => 'A+','id' => 271231],
-	'Buwei Yang Chao' => ['grade' => 'A', 'id' => 818211]
+	'James D. McCawley' => [ 'grade' => 'A+','id' => 271231 ],
+	'Buwei Yang Chao' => [ 'grade' => 'A', 'id' => 818211 ]
 ];
 $inventory = [
 	'pen' => 5,
@@ -43,11 +43,11 @@ $lunches = [
 		drink' => 'Coffee' ]
 	];
 
-$family = ['U Sein Maung Win', 'Daw Kyu Kyu', 'Kaung Kaung', 'Seint Nandar Oo'];
+$family = [ 'U Sein Maung Win', 'Daw Kyu Kyu', 'Kaung Kaung', 'Seint Nandar Oo' ];
 $family = [
-	'U Sein Maung Win' => ['age' => 60,'relation' => 'father'],
-	'Daw Kyu Kyu' => ['age' => 57, 'relation' => 'mother'],
-	'Kaung Kaung' => ['age' => 27, 'relation' => 'brother'],
-	'Seint Nandar Oo' => ['age' => 22, 'relation' => 'self']
+	'U Sein Maung Win' => [ 'age' => 60,'relation' => 'father' ],
+	'Daw Kyu Kyu' => [ 'age' => 57, 'relation' => 'mother' ],
+	'Kaung Kaung' => [ 'age' => 27, 'relation' => 'brother' ],
+	'Seint Nandar Oo' => [ 'age' => 22, 'relation' => 'self' ]
 ];
 ?>

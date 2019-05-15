@@ -1,6 +1,14 @@
 <?php 
-$flavors = array('Japanese' => array('hot' => 'wasabi', 'salty' => 'soy sauce'),
-				'Chinese' => array('hot' => 'mustard', 'pepper-salty' => 'prickly ash'));
+$flavors = array(
+	'Japanese' => array(
+		'hot' => 'wasabi',
+		'salty' => 'soy sauce'
+	),
+	'Chinese' => array(
+		'hot' => 'mustard',
+		'pepper-salty' => 'prickly ash'
+	)
+);
 $meals = array(
 	'breakfast' => ['Walnut Bun','Coffee'],
 	'lunch' => ['Cashew Nuts', 'White Mushrooms'],

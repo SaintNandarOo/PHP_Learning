@@ -1,7 +1,7 @@
 <?php 
 $specials = array( 
-	array('Chestnut Bun', 'Walnut Bun', 'Peanut Bun'), 
-	array('Chestnut Salad','Walnut Salad', 'Peanut Salad') 
+	array('Chestnut Bun', 'Walnut Bun', 'Peanut Bun'),
+	array('Chestnut Salad','Walnut Salad', 'Peanut Salad')
 );
 for ( $i = 0, $num_specials = count( $specials ); $i < $num_specials; $i++ ) {
 	for ( $m = 0, $num_sub = count( $specials[ $i ] ); $m < $num_sub; $m++ ) {
