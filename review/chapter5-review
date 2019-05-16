@@ -30,7 +30,7 @@ echo 'The total cost is $total. <br>';
 print 'I only have $20 in cash, so...';
 if ( $total > 20 ) {
 	print 'I must pay with my credit card.';
-}else{
+} else {
 	print 'I can pay with cash.';
 }
 
@@ -45,7 +45,7 @@ function restaurant_check( $meal, $tax, $tip ) {
 function payment_method( $cash_on_hand, $amount ) {
 	if ( $amount > $cash_on_hand ) {
 		return 'credit card';
-	}else{
+	} else {
 		return 'cash';
 	}
 }
@@ -54,6 +54,6 @@ $method = payment_method( 20, $total );
 print 'I will pay with ' . $method;
 if ( restaurant_check( 15.22, 8.25, 15 ) < 20 ) {
 	print 'Less than $20, I can pay cash.';
-}else{
+} else {
 	print 'Too expensive, I need my credit card.';
 }
