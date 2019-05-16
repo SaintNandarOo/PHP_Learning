@@ -1,0 +1,59 @@
+//remove unnecessary space
+<?php
+//Ch5Ex1.php
+//remove unnecessary space for all files like ; and { 
+//write comment fro parameter and return type and function deftinatin
+// glogal variable comment eg.  * @global array $dacana_csv_data
+//PHP file use ''
+
+/**
+ * create html image
+ * @param string $url,$alt, int $height,$width
+ * @return string $html
+ */
+function html_img( $url, $alt = null, $height = null, $width = null ) {
+	$html = '<img src="' . $url . '" alt="' . $alt . '" height="' . $height . '" width="' . $width . '" />';
+	return $html;
+}
+echo html_img( 'pic.png', 'screenshot', '300px', '300px' );
+echo html_img( 'pic.png' );
+
+//example5-11.php
+function restaurant_check( $meal, $tax, $tip ) {
+	$tax_amount = $meal * ($tax / 100);
+	$tip_amount = $meal * ($tip / 100);
+	$total_amount = $meal + $tax_amount + $tip_amount;
+	return $total_amount;
+}
+$total = restaurant_check( 15.22, 8.25, 15 );
+echo 'The total cost is $total. <br>';
+print 'I only have $20 in cash, so...';
+if ( $total > 20 ) {
+	print 'I must pay with my credit card.';
+}else{
+	print 'I can pay with cash.';
+}
+
+//example5-15.php
+// fix code format for example5-18.php and example5-19.php (remove unnecessary space)
+function restaurant_check( $meal, $tax, $tip ) {
+	$tax_amount = $meal * ( $tax / 100 );
+	$tip_amount = $meal * ( $tip / 100 );
+	$total_amount = $meal + $tax_amount + $tip_amount;
+	return $total_amount;
+}
+function payment_method( $cash_on_hand, $amount ) {
+	if ( $amount > $cash_on_hand ) {
+		return 'credit card';
+	}else{
+		return 'cash';
+	}
+}
+$total = restaurant_check( 15.22, 8.25, 15 );
+$method = payment_method( 20, $total );
+print 'I will pay with ' . $method;
+if ( restaurant_check( 15.22, 8.25, 15 ) < 20 ) {
+	print 'Less than $20, I can pay cash.';
+}else{
+	print 'Too expensive, I need my credit card.';
+}
