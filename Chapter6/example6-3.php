@@ -1,5 +1,5 @@
-<?php  
-class Entree { 
+<?php
+class Entree {
 	public $name;
 	public $ingredients = array();
 	/**
@@ -16,7 +16,7 @@ class Entree {
 	 */
 	public static function getSizes() {
 	return array( 'small', 'medium', 'large' );
-	} 
+	}
 }
 $sizes = Entree::getSizes();
 foreach ( $sizes as $size ) {

@@ -1,6 +1,6 @@
-<?php  
+<?php
 require 'example6-7.php';
-class PriceEntree extends Entree{
+class PriceEntree extends Entree {
 	function __construct( $name, $ingredients ) {
 		parent::__construct( $name, $ingredients );
 		foreach ( $this -> ingredients as $ingredient ) {

@@ -1,4 +1,4 @@
-<?php  
+<?php
 namespace Tiny;
 class Fruit {
 	public static function munch ( $bite ) {

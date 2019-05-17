@@ -1,4 +1,4 @@
-<?php  
+<?php
 class Entree {
 	public $name;
 	public $ingredients = array();

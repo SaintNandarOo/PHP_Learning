@@ -12,14 +12,14 @@ class Ingredient {
 		$this -> cost = $cost;
 	}
 	/**
-	 * Get the name of ingredient 
+	 * Get the name of ingredient
 	 * @return string $name
 	 */
 	public function getName() {
 		return $this -> name;
 	}
 	/**
-	 * Get the cost of ingredient 
+	 * Get the cost of ingredient
 	 * @return string $cost
 	 */
 	public function getCost() {
