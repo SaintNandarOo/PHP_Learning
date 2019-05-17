@@ -1,0 +1,73 @@
+//example6-2.php
+remove unnecessary space at
+class Entree { 
+} 
+$soup -> name = 'Chicken Soup'; 
+foreach ( [ 'chicken', 'lemon', 'bread', 'water' ] as $ing ) { 
+print "Soup contains $ing.<br>"; 
+if ( $sandwich -> hasIngredient( $ing ) ) { 
+} 
+
+//example6-3.php
+remove unnecessary space at
+<?php  
+class Entree { 
+
+//example6-5.php
+remove unnecessary space at
+<?php  
+
+//example6-7.php
+remove unnecessary space at
+<?php 
+public function __construct( $name, $ingredients ) { 
+throw new Exception('$ingredients must be an array'); 
+} 
+class Entree { 
+//use tab 
+        $this->name = $name;
+        $this->ingredients = $ingredients;
+    }
+    /**
+
+//example6-8.php
+remove unnecessary space at
+$drink = new Entree( 'Glass of Milk', 'milk' ); 
+	print "Yummy!"; 
+
+//example6-9.php
+remove unnecessary space at
+<?php 
+require 'example6-7.php';
+	$drink = new Entree( 'Glass of Milk', 'milk' ); 
+		print "Yummy!"; 
+
+//example6-10.php
+remove unnecessary space at
+<?php  
+	public function hasIngredient( $ingredient ) { 
+			if ( $entree -> hasIngredient( $ingredient ) ) { 
+			} 
+		return false; 
+	}
+}
+$soup = new Entree( 'Chicken Soup', array( 'chicken', 'water' ) ); 
+foreach ( [ 'chicken', 'water', 'pickles', 'bread' ] as $ing ) { 
+		print "Something in the combo contains $ing.<br>"; 
+
+//example6-12.php
+remove unnecessary space at
+<?php  
+	public function __construct( $name, $entrees ) { 
+		parent::__construct( $name, $entrees ); 
+			} 
+	public function hasIngredient( $ingredient ) { 
+			if ( $entree -> hasIngredient( $ingredient ) ) { 
+			} 
+
+//remove unnecessary space at the exercise files
+
+
+//ch6ex3
+add space at
+class PriceEntree extends Entreex {
