@@ -1,0 +1,89 @@
+PHOP use '' and HTML use ""
+
+//example8-1.php
+http_response_code( 401 );
+
+//example8-10.php
+
+echo 'I haven't decided if I want to send a cookie yet.<br>';
+echo 'Yes, sending that cookie was the right decision.<br>';
+
+//example8-13.php
+
+<html>
+<body onload="document.getElementById("redirectForm").submit()">
+<form id="redirectForm" method="POST" action="/done.html">
+<input type="hidden" name="status" value="complete"/>
+<input type="hidden" name="id" value="0u812"/>
+<input type="submit" value="Please Click Here To Continue"/>
+</form>
+</body>
+</html>
+
+//example8-14.php
+
+print str_repeat( ' ', 300 );
+
+//example8-15.php
+header( 'Location: http://www.google.com/' );
+include_once '${version}_header';
+
+//example8-22.php
+error_log( 'Client requested invalid Range.' );
+
+		if ( $offset !== false ) {
+				$offsets[] = $offset;
+		}
+
+list( $start, $end ) = $offsets[0];
+header( 'Content-Range: bytes $start-$end/$filelength' );
+header( 'Content-Type: $content_type' );
+
+list( $start, $end ) = $offset;
+
+$content_length += strlen( $boundary_header ) + ( $end - $start + 1 );
+
+$boundaries[0] = substr( $boundaries[0], 2 );
+
+send_range(  $handle, $start, $end );
+
+fclose( $handle );
+
+error_log( 'Error: fseek() fail.' );
+
+do {
+
+		} else {
+				$start = max( 0, $filelength - $end );
+				$end = $filelength - 1;
+		}
+
+function str_rand( $length = 32, $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' ) {
+	if ( ! is_int( $length ) || $length < 0 ) {
+
+//remove unnecessary new line
+
+//login.php
+<?php
+$email = $_GET['email'];
+$password = $_GET['password'];
+if ( $email && $password )
+	echo 'Hello, you have provided <b>$email</b> as your login ID and your password is <b>$password</b>.';
+else
+	echo 'Login ID or password missing! Please <a href='example8-6.php'>try again</a>.';
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
