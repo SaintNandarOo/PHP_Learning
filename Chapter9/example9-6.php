@@ -3,8 +3,8 @@
 	Color <input type="text" name="color"><br>
 	<?php
 	$choices = array( 'Eggs','Toast','Coffee' );
-	print "Choices<select name="choices"><br>";
-	foreach ( $choices as $choice) { 
+	print 'Choices<select name="choices"><br>';
+	foreach ( $choices as $choice ) { 
 		print "<option>$choice</option><br>";
 	}
 	?>

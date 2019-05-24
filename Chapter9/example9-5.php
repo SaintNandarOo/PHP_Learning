@@ -1,10 +1,15 @@
 <?php
-if( ! ( filter_has_var( INPUT_POST, 'flavor' ) && ( strlen( filter_input( INPUT_POST, 'flavor' ) ) >0 ) ) ) {
+if ( ! ( filter_has_var( INPUT_POST, 'flavor' ) && ( strlen( filter_input( INPUT_POST, 'flavor' ) ) >0 ) ) ) {
 	print 'You must enter your favourite ice cream flavor.<br>';
 }
-if ( filter_has_var( INPUT_POST, 'color' ) && ( strlen( filter_input( INPUT_POST, 'color', FILTER_SANITIZE_STRING ) ) <5 ) ) {
+if ( filter_has_var( INPUT_POST, 'color' ) && ( strlen( filter_input( INPUT_POST, 'color', FILTER_SANITIZE_STRING ) ) < 5 ) ) {
 	print 'Color must be more than 5 characters.<br>';
 }
+
+if ( filter_has_var( INPUT_POST, 'color' ) && ( strlen( filter_input( INPUT_POST, 'color', FILTER_SANITIZE_STRING ) ) < 5 ) ) {
+	print 'Color must be more than 5 characters.<br>';
+}
+
 if ( ! ( filter_has_var( INPUT_POST, 'choices') && filter_input( INPUT_POST, 'choices', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY ) ) ) {
 	print 'You must select some choices.<br>';
 }

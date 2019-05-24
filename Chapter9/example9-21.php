@@ -11,9 +11,9 @@ if ( ( $_SERVER['REQUEST_METHOD'] == 'GET') || ( ! isset( $_POST['stage'] ) ) ) 
 $stage = max( $stage, 1 );
 $stage = min( $stage, 3 );
 // Save any submitted data
-if ( $stage > 1)  {
+if ( $stage > 1 )  {
 	foreach ( $_POST as $key => $value ) {
-		$_SESSION[$key] = $value;
+		$_SESSION[ $key ] = $value;
 	}
 }
 include __DIR__ . '/stage-' . $stage . '.php';

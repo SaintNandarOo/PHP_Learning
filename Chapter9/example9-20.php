@@ -1,10 +1,10 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+if ( $_SERVER['REQUEST_METHOD'] == 'GET') {
 	?>
 	<form method="post" action="<?php echo htmlentities( $_SERVER['SCRIPT_NAME'] ) ?>"
 	enctype="multipart/form-data">
-	<input type="file" name="document"/>
-	<input type="submit" value="Send File"/>
+		<input type="file" name="document"/>
+		<input type="submit" value="Send File"/>
 	</form>
 	<?php
 } else {

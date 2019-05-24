@@ -1,7 +1,7 @@
 <?php
 $choices = array( 'Eggs','Toast','Coffee' );
 echo '<select name="food"><br>';
-foreach ( $choices as $choice) {
+foreach ( $choices as $choice ) {
 	echo '<option>$choice</option><br>';
 }
 echo '</select>';

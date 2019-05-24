@@ -5,13 +5,13 @@ function is_valid_credit_card( $s ) {
 	$sum = 0;
 	for ( $i = 0, $j = strlen($s); $i < $j; $i++ ) {
 		// Use even digits as-is
-		if( ( $i % 2 ) == 0 ){
+		if ( ( $i % 2 ) == 0 ){
 			$val = $s[ $i ];
 		} else {
 			// Double odd digits and subtract 9 if greater than 9
 			$val = $s[ $i ] * 2;
-			if( $val > 9 ) {
-				$val-=9;
+			if ( $val > 9 ) {
+				$val -= 9;
 			}
 		}
 		$sum += $val;
