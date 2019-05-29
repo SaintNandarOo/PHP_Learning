@@ -6,17 +6,17 @@ class AvgStatement extends PDOStatement {
 		// Remove PDOStatement's built-in 'queryString' variable
 		unset( $vars['queryString'] );
 		foreach ( $vars as $var => $value ) {
-			$sum += strlen($value);
+			$sum += strlen( $value );
 		}
 		return $sum / count( $vars );
 	}
 }
-$servername = "localhost";
-$username = "root";
-$password = "pwdpwd";
-$dbname = "testing";
+$servername = 'localhost';
+$username = 'root';
+$password = 'pwdpwd';
+$dbname = 'testing';
 try {
-	$conn = new PDO( "mysql:host=$servername; dbname=$dbname", $username, $password);
+	$conn = new PDO( 'mysql:host=$servername; dbname=$dbname', $username, $password );
 	// set the PDO error mode to exception
 	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	// begin the transaction
