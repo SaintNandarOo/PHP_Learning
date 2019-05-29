@@ -1,0 +1,79 @@
+$servername = 'localhost';
+$username = 'root';
+$password = 'pwdpwd';
+$dbname = 'testing';
+
+$servername = 'localhost';
+$username = 'root';
+$password = 'pwdpwd';
+$dbname = 'testing';
+
+$conn = new PDO( 'mysql:host=$servername; dbname=$dbname', $username, $password );
+
+$conn = new PDO( 'mysql:host=$servername; dbname=$dbname', $username, $password );
+
+//example10-12.php
+$sum += strlen($value);
+
+$sum += strlen( $value );
+
+//example10-17.php
+$st->execute(array( 'fire' ));
+
+$st->execute( array( 'fire' ) );
+
+$st->execute(array( 'water' ));
+
+$st->execute( array( 'water' ) );
+
+print $row[0] . "<br/>";
+
+print $row[0] . '<br/>';
+
+	}
+catch(PDOException $e)
+	{
+	// roll back the transaction if something failed
+	$conn->rollback();
+	echo 'Error: ' . $e->getMessage();
+	}
+
+
+} catch( PDOException $e ) {
+	// roll back the transaction if something failed
+	$conn->rollback();
+	echo 'Error: ' . $e->getMessage();
+}
+
+//example10-18.php
+
+$st->execute( array( 'earth','Mars' ) );
+
+$st->execute( array( 'earth', 'Mars' ) );
+
+print $row[0] . "<br/>";
+
+print $row[0] . '<br/>';
+
+//example10-3.php
+	}
+catch(PDOException $e)
+	{
+	// roll back the transaction if something failed
+	$conn->rollback();
+	echo 'Error: ' . $e->getMessage();
+	}
+
+} catch(vPDOException $e ) {
+	// roll back the transaction if something failed
+	$conn->rollback();
+	echo 'Error: ' . $e->getMessage();
+}
+//example10-15.php
+$st->execute( array( 4,'Vitory' ) );
+
+$st->execute( array( 4, 'Vitory' ) );
+
+$st->execute( array( 1,'Kay' ) );
+
+$st->execute( array( 1, 'Kay' ) );
