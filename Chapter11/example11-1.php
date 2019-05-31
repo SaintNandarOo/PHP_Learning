@@ -26,7 +26,7 @@ class DBHandler implements SessionHandlerInterface {
 		$sth = $this->dbh->prepare( "SELECT session_data FROM sessions WHERE session_id = ?" );
 		$sth->execute( array( $session_id ) );
 		$rows = $sth->fetchAll( PDO::FETCH_NUM );
-		if ( count( $rows ) == 0) {
+		if ( count( $rows ) == 0 ) {
 			return '';
 		} else {
 			return $rows[0][0];
@@ -37,19 +37,20 @@ class DBHandler implements SessionHandlerInterface {
 		$sth = $this->dbh->prepare( "UPDATE sessions SET session_data = ?, last_update = ? WHERE session_id = ?" );
 		$sth->execute( array( $session_data, $now, $session_id ) );
 		if ( $sth->rowCount() == 0 ) {
-			$sth2 = $this->dbh->prepare( "INSERT INTO sessions (session_id, session_data, last_update) VALUES (?,?,?)" );
+			$sth2 = $this->dbh->prepare( "INSERT INTO sessions ( session_id, session_data, last_update ) VALUES ( ?, ?, ? )" );
 			$sth2->execute( array( $session_id, $session_data, $now ) );
 		}
 	}
 	public function createTable( $save_path, $name, $connect = true ) {
-		if ($connect) {
+		if ( $connect ) {
 			$this->connect( $save_path, $name );
 		}
 		$sql = "CREATE TABLE sessions (
-		session_id VARCHAR(64) NOT NULL,
+		session_id VARCHAR( 64 ) NOT NULL,
 		session_data MEDIUMTEXT NOT NULL,
 		last_update TIMESTAMP NOT NULL,
-		PRIMARY KEY (session_id) )";
+		PRIMARY KEY ( session_id )
+		)";
 		$this->dbh->exec( $sql );
 	}
 	protected function connect( $save_path ) {
@@ -58,7 +59,7 @@ class DBHandler implements SessionHandlerInterface {
 		if ( isset( $parts['query'] ) ) {
 			parse_str( $parts['query'], $query );
 			$user = isset( $query['user'] ) ? $query['user'] : 'root';
-			$password = isset($query['password']) ? $query['password'] : 'pwdpwd';
+			$password = isset( $query['password'] ) ? $query['password'] : 'pwdpwd';
 			$dsn = $parts['scheme'] . ':';
 			if ( isset( $parts['host'] ) ) {
 				$dsn .= '//' . $parts['host'];

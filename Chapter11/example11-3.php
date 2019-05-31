@@ -17,7 +17,7 @@ try {
 	if ( $row[0] == 0 ) {
 		$st2 = $conn->prepare( "SELECT searchterm, source, date( dt ) AS sdate, COUNT( * ) as searches FROM searches WHERE date( dt ) = ?" );
 		$st2->execute( array( date( 'Y-m-d', strtotime( 'yesterday' ) ) ) );
-		$stInsert = $conn->prepare( "INSERT INTO searchsummary (searchterm, source, sdate, searches) VALUES (?,?,?,?)" );
+		$stInsert = $conn->prepare( "INSERT INTO searchsummary ( searchterm, source, sdate, searches ) VALUES ( ?, ?, ?, ? )" );
 		while ( $row = $st2->fetch( PDO::FETCH_NUM ) ) {
 			$stInsert->execute( $row );
 		}

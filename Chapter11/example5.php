@@ -11,17 +11,17 @@ try {
 	$conn->beginTransaction();
 	//our SQL statements
 	$conn->exec( "CREATE TABLE searches (
-	searchterm VARCHAR(255) NOT NULL,
-	dt DATETIME NOT NULL,
-	source VARCHAR(15) NOT NULL )"
-	);
+		searchterm VARCHAR( 255 ) NOT NULL,
+		dt DATETIME NOT NULL,
+		source VARCHAR( 15 ) NOT NULL
+	)" );
 	$conn->exec( "CREATE TABLE searchsummary (
-		searchterm VARCHAR(255) NOT NULL,
-		source VARCHAR(15) NOT NULL,
+		searchterm VARCHAR( 255 ) NOT NULL,
+		source VARCHAR( 15 ) NOT NULL,
 		sdate DATE NOT NULL,
 		searches INT UNSIGNED NOT NULL,
-		PRIMARY KEY (searchterm, source, sdate) )"
-	);
+		PRIMARY KEY ( searchterm, source, sdate )
+	)" );
 	// commit the transaction
 	$conn->commit();
 	echo 'New table created successfully';
