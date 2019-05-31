@@ -45,11 +45,11 @@ class DBHandler implements SessionHandlerInterface {
 		if ( $connect ) {
 			$this->connect( $save_path, $name );
 		}
-		$sql = "CREATE TABLE sessions (
-		session_id VARCHAR( 64 ) NOT NULL,
-		session_data MEDIUMTEXT NOT NULL,
-		last_update TIMESTAMP NOT NULL,
-		PRIMARY KEY ( session_id )
+			$sql = "CREATE TABLE sessions (
+			session_id VARCHAR( 64 ) NOT NULL,
+			session_data MEDIUMTEXT NOT NULL,
+			last_update TIMESTAMP NOT NULL,
+			PRIMARY KEY ( session_id )
 		)";
 		$this->dbh->exec( $sql );
 	}

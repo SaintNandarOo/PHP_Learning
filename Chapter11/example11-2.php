@@ -45,7 +45,7 @@ class pc_Shm {
 	protected function open( $id, $size ) {
 		$key = $this->getKey( $id );
 		$shm = shmop_open( $key, 'c', 0644, $size );
-		if ( ! $shm) {
+		if ( ! $shm ) {
 			trigger_error( 'pc_Shm: could not create shared memory segment', E_USER_ERROR );
 			return false;
 		}
