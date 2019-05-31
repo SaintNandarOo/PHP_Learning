@@ -1,0 +1,101 @@
+//example5.php
+
+line 13 to 17
+	$conn->exec( "CREATE TABLE searches (
+	searchterm VARCHAR(255) NOT NULL,
+	dt DATETIME NOT NULL,
+	source VARCHAR(15) NOT NULL )"
+	);
+	↓
+	$conn->exec( "CREATE TABLE searches (
+		searchterm VARCHAR( 255 ) NOT NULL,
+		dt DATETIME NOT NULL,
+		source VARCHAR( 15 ) NOT NULL
+	)" );
+
+line 18 to 24
+	$conn->exec( "CREATE TABLE searchsummary (
+		searchterm VARCHAR(255) NOT NULL,
+		source VARCHAR(15) NOT NULL,
+		sdate DATE NOT NULL,
+		searches INT UNSIGNED NOT NULL,
+		PRIMARY KEY (searchterm, source, sdate) )"
+	);
+	↓
+	$conn->exec( "CREATE TABLE searchsummary (
+		searchterm VARCHAR( 255 ) NOT NULL,
+		source VARCHAR( 15 ) NOT NULL,
+		sdate DATE NOT NULL,
+		searches INT UNSIGNED NOT NULL,
+		PRIMARY KEY ( searchterm, source, sdate )
+	)" );
+
+//example11-1.php
+line 29 -> if ( count( $rows ) == 0) {
+		   ↓
+		   if ( count( $rows ) == 0 ) {
+
+line 40
+	$sth2 = $this->dbh->prepare( "INSERT INTO sessions (session_id, session_data, last_update) VALUES (?,?,?)" );
+	↓
+	$sth2 = $this->dbh->prepare( "INSERT INTO sessions ( session_id, session_data, last_update ) VALUES ( ?, ?, ? )" );
+
+line 45 -> if ($connect) {
+		   ↓
+		   if ( $connect ) {
+line 48 to 52
+	$sql = "CREATE TABLE sessions (
+	session_id VARCHAR(64) NOT NULL,
+	session_data MEDIUMTEXT NOT NULL,
+	last_update TIMESTAMP NOT NULL,
+	PRIMARY KEY (session_id) )";
+	↓
+	$sql = "CREATE TABLE sessions (
+		session_id VARCHAR( 64 ) NOT NULL,
+		session_data MEDIUMTEXT NOT NULL,
+		last_update TIMESTAMP NOT NULL,
+		PRIMARY KEY ( session_id )
+	)";
+line 61
+	$password = isset($query['password']) ? $query['password'] : 'pwdpwd';
+	↓
+	$password = isset( $query['password'] ) ? $query['password'] : 'pwdpwd';
+
+//example11-2.php
+line 9
+	if ( $tmp != '' && is_dir( $tmp ) && is_writable( $tmp ) ) {
+	↓
+	if ( $tmp && is_dir( $tmp ) && is_writable( $tmp ) ) {
+
+line 19 t0 20
+	if ( ! $data) {
+		trigger_error( 'pc_Shm: could not read from shared memory block', E_USER_ERROR);
+	↓
+	if ( ! $data ) {
+		trigger_error( 'pc_Shm: could not read from shared memory block', E_USER_ERROR );
+
+line 30
+	trigger_error( 'pc_Shm: could not write entire length of data', E_USER_ERROR);
+	↓
+	trigger_error( 'pc_Shm: could not write entire length of data', E_USER_ERROR );
+
+line 48 to 49
+	if ( ! $shm) {
+		trigger_error('pc_Shm: could not create shared memory segment', E_USER_ERROR);
+	↓
+	if ( ! $shm ) {
+		trigger_error( 'pc_Shm: could not create shared memory segment', E_USER_ERROR );
+
+line 60
+	touch($keyfile);
+	↓
+	touch( $keyfile );
+
+//example11-3.php
+line 20
+	$stInsert = $conn->prepare( "INSERT INTO searchsummary (searchterm, source, sdate, searches) VALUES (?,?,?,?)" );
+	↓
+	$stInsert = $conn->prepare( "INSERT INTO searchsummary ( searchterm, source, sdate, searches ) VALUES ( ?, ?, ?, ? )" );
+
+line 28 to 32->Please back tab in the front of this line( all select it and click 
+			   Shift+tab )
