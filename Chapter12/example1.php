@@ -12,16 +12,16 @@ $shows = array(
 	array(
 		'name' => 'Law & Order: SVU',
 		'channel' => 'NBC',
-		'start'    => '9:00 PM',
+		'start' => '9:00 PM',
 		'duration' => '60'
 	)
 );
 foreach ( $shows as $show ) {
 	print '<show>';
-	foreach($show as $tag => $data) {
+	foreach( $show as $tag => $data ) {
 		print '<' . $tag . '>' . htmlspecialchars($data) . '</' . $tag . '>';
 	}
-		print '</show>';
-	}
+	print '</show>';
+}
 	print '</shows>';
 ?>
