@@ -1,5 +1,5 @@
 <?php
- $body = "<p>I like pickles and herring.</p><a href='pickle.php'><img src='pickle.jpg'/>A pickle picture</a>I have a herringbone-patterned toaster cozy.<herring>Herring is not a real HTML element!</herring>";
+$body = "<p>I like pickles and herring.</p><a href='pickle.php'><img src='pickle.jpg'/>A pickle picture</a>I have a herringbone-patterned toaster cozy.<herring>Herring is not a real HTML element!</herring>";
 $words = array( 'pickle', 'herring' );
 $patterns = array();
 $replacements = array();
