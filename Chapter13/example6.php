@@ -1,5 +1,5 @@
 <?php
-$html=<<<_HTML_
+$html = <<<_HTML_
 	<p>Some things I enjoy eating are:</p>
 	<ul>
 	<li><a href="http://en.wikipedia.org/wiki/Pickle">Pickles</a></li>
