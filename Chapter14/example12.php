@@ -7,7 +7,7 @@ class HeaderSaver {
 	 * @param string $curl, $data
 	 * @return int
 	 */
-	public function header( $curl, $data ){
+	public function header( $curl, $data ) {
 		if ( is_null( $this->code ) && preg_match( '@^HTTP/\d\.\d (\d+) @', $data, $matches ) ) {
 			$this->code = $matches[1];
 		} else {
