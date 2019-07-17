@@ -15,7 +15,7 @@ if ( $_SERVER[ 'REQUEST_METHOD' ] == 'PUT' ) {
 	$id = create( $job, $request[0] );
 	// Uses id from request
 	$json = json_encode( array( 'id' => $id ) );
-	http_response_code( 201 ); // Created
+	http_response_code(201); // Created
 	$site = 'https://api.example.com';
 	header( "Location: $site/" . $_SERVER[ 'REQUEST_URI' ] );
 	print $json;

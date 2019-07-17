@@ -1,5 +1,5 @@
 <?php
-http_response_code( 503 );
+http_response_code(503);
 // Site down
 $error_body = [
 	"error" => "Down for maintenance",

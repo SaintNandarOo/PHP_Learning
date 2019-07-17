@@ -5,7 +5,7 @@ $job[123] = [
 ];
 $json = json_encode( $job[123] );
 // Resource exists 200: OK
-http_response_code( 200 );
+http_response_code(200);
 // And it's being sent back as JSON
 header( 'Content-Type: application/json' );
 print $json;
