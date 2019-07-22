@@ -40,7 +40,7 @@ function bar_chart( $question, $answers ) {
 			ImageString( $image, 2, $x, $y, $line, $black );
 			$y += 12;
 		}
-		$y+=7;
+		$y += 7;
 	}
 	// crop image by copying it
 	$chart = ImageCreateTrueColor( 250, $y );
