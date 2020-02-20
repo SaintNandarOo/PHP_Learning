@@ -19,3 +19,6 @@ $total = array_sum( $pop );
 echo "<tr><td> Total </td><td>". number_format( $total ) . "</td></tr>";
 echo "</table><br>";
 ?>
+
+
+
