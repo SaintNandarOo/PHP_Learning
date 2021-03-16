@@ -1,0 +1,11 @@
+harnessApiVersion: '1.0'
+type: GIT
+authorEmailId: kyawzawaung321@gmail.com
+authorName: Kyaw Zaw Aung
+branch: main
+commitMessage: test
+keyAuth: false
+password: safeharness:Pu4-9ScXT2Ck-jDKbZgAXQ
+url: https://github.com/kyawzawtest/test
+urlType: REPO
+username: kyawzawtest
