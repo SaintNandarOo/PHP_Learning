@@ -1,0 +1,11 @@
+harnessApiVersion: '1.0'
+type: GIT
+authorEmailId: seint.nandar.oo@digitalstacks.net
+authorName: Seint
+branch: card-23575135
+commitMessage: commit at card-23575135
+keyAuth: false
+password: safeharness:0yz5wJRMR-uqbFz5Je4imw
+url: https://github.com/SaintNandarOo/PHP_Learning/
+urlType: REPO
+username: SaintNandarOo

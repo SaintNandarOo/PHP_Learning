@@ -1,0 +1,11 @@
+harnessApiVersion: '1.0'
+type: GIT
+authorEmailId: myat.hsu.mon@digitallaboratory.net
+authorName: Myat Hsu
+branch: card-21320913
+commitMessage: commit at card-21320913
+keyAuth: false
+password: safeharness:Pu4-9ScXT2Ck-jDKbZgAXQ
+url: https://github.com/myathsumon93/PHP
+urlType: REPO
+username: Myat Hsu
