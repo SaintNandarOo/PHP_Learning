@@ -1,0 +1,4 @@
+harnessApiVersion: '1.0'
+type: AMI
+region: ap-northeast-1
+serverName: Cloud Provider 1
