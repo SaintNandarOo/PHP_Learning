@@ -1,17 +1,7 @@
 harnessApiVersion: '1.0'
 type: AWS
+accessKey: AKIAWULSSW5QXKCMKIHG
 assumeCrossAccountRole: false
-tag: ec2-delegate-2
-usageRestrictions:
-  appEnvRestrictions:
-  - appFilter:
-      filterType: ALL
-    envFilter:
-      filterTypes:
-      - PROD
-  - appFilter:
-      filterType: ALL
-    envFilter:
-      filterTypes:
-      - NON_PROD
-useEc2IamCredentials: true
+secretKey: safeharness:X5D-C8kDSr-iPaOw1mrX7A
+useEc2IamCredentials: false
+useIRSA: false
