@@ -1,5 +1,5 @@
 //example5.php
-
+//test command lin
 line 13 to 17
 	$conn->exec( "CREATE TABLE searches (
 	searchterm VARCHAR(255) NOT NULL,
