@@ -1,0 +1,28 @@
+harnessApiVersion: '1.0'
+type: CLOUD_WATCH
+alertEnabled: false
+alertThreshold: 0.5
+analysisTolerance: LOW
+connectorName: AWS
+ecsMetrics:
+  default:
+  - dimension: ClusterName
+    dimensionDisplay: Cluster Name
+    displayName: Memory Reservation
+    enabledDefault: true
+    metricName: MemoryReservation
+    metricType: VALUE
+    statistics: Average
+    unit: Percent
+  - dimension: ClusterName
+    dimensionDisplay: Cluster Name
+    displayName: Memory Utilization
+    enabledDefault: true
+    metricName: MemoryUtilization
+    metricType: VALUE
+    statistics: Average
+    unit: Percent
+enabled24x7: false
+numOfOccurrencesForAlert: 1
+region: ap-northeast-1
+serviceName: To-Do List K8s

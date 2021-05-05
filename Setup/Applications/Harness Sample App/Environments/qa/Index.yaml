@@ -1,0 +1,6 @@
+harnessApiVersion: '1.0'
+type: ENVIRONMENT
+configMapYamlByServiceTemplateName: {}
+environmentType: NON_PROD
+tags:
+  Test1: aa
